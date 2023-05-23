@@ -1,5 +1,5 @@
 """
-Spel
+Spel slutprojekt av Emil
 """
 import math
 import random
