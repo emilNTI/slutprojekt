@@ -393,8 +393,10 @@ class Game():
         for i in json_form["dreamlo"]["leaderboard"]["entry"]:
             leader_board_list.append(i)
             count += 1
-        if count == 1:
-            leader_board_list = [json_form["dreamlo"]["leaderboard"]]
+        if leader_board_list[0] == 'name': # om de bara är en spelare
+            print("return")
+            leader_board_list.clear()
+            leader_board_list.append(json_form["dreamlo"]["leaderboard"]["entry"])
         return leader_board_list
     def game_loop(self):
         """
