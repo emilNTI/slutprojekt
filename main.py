@@ -183,6 +183,7 @@ class Meteorit(Vector2d):
         self.collision_box.y = self.pos_y
         big_screen_size = self.game_class.screen_size+300
         small_screen_size = -300
+        # om den är utanför skärmen ta bort
         if (self.pos_x>big_screen_size or self.pos_y>big_screen_size):
             self.kill()
         if (self.pos_x<small_screen_size or self.pos_y<small_screen_size):
