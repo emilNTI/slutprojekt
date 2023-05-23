@@ -1,5 +1,5 @@
 """
-Spel slutprojekt av Emil
+Spel
 """
 import math
 import random
@@ -14,9 +14,9 @@ class FontHandle():
     """
     def __init__(self, game_class, size = 32) -> None:
         """
-        Init method för ett lättare sätt att använda fonts på
+        Init method för ett lättare sätt att använda pygame fonts på
         Args:
-            game_class (Game): Aktiva game klassen
+            game_class (Game): Aktiva Game klassen
             size (int): Tecken storlek på fonten
         """
         self.game_class = game_class
